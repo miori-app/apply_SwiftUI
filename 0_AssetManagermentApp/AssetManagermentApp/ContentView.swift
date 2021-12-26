@@ -9,14 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var selection : Tab = .asset
-    
     enum Tab {
         case asset
         case recommend
         case alert
         case setting
     }
+    
+    // 상태
+    @State private var selection : Tab = .asset
+
     var body: some View {
         TabView(selection: $selection) {
             Color.white

@@ -11,6 +11,7 @@ import SwiftUI
 struct AssetManagermentAppApp: App {
     var body: some Scene {
         WindowGroup {
+            // 보여질 뷰를 표시
             ContentView()
         }
     }
