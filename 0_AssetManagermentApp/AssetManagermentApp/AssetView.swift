@@ -16,6 +16,9 @@ struct AssetView: View {
                     AssetMenuGridView()
                 }
             }
+            // 미리 만들어둔 네비게이션 합체
+            .background(.gray.opacity(0.2))
+            .navigationBarWithBtnStyle("내 자산")
         }
     }
 }
