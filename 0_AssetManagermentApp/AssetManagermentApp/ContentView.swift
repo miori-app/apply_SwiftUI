@@ -21,7 +21,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selection) {
-            Color.white
+            AssetView()
                 .tabItem {
                     Image(systemName: "dollarsign.circle.fill")
                     Text("asset")
@@ -50,7 +50,8 @@ struct ContentView: View {
                 .tag(Tab.setting)
         }
         .onAppear {
-            UITabBar.appearance().isTranslucent = false
+            // 이거하면 gray area 생성
+            //UITabBar.appearance().isTranslucent = false
             UITabBar.appearance().backgroundColor = .white
         }
     }
