@@ -6,17 +6,16 @@
 //
 
 import Foundation
-import QuartzCore
 
 enum AssetMenu : String, Identifiable, Decodable {
-case creditScore
-case bankAccount
-case investment
-case loan
-case insurance
-case creditCard
-case cash
-case realEstate
+    case creditScore
+    case bankAccount
+    case investment
+    case loan
+    case insurance
+    case creditCard
+    case cash
+    case realEstate
     
     var id : String {
         return self.rawValue
