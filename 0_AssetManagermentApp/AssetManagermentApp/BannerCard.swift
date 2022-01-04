@@ -8,13 +8,33 @@
 import SwiftUI
 
 struct BannerCard: View {
+    var banner : AssetBanner
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        Ztack {
+//            Color(banner.backgroundColor)
+//            VStack{
+//                Text(banner.title)
+//                    .font(.headline)
+//                Text(banner.description)
+//                    .font(.subheadline)
+//            }
+//        }
+        Color(banner.backgroundColor)
+            .overlay {
+                VStack {
+                    Text(banner.title)
+                        .font(.headline)
+                    Text(banner.description)
+                        .font(.subheadline)
+                }
+            }
     }
 }
 
 struct BannerCard_Previews: PreviewProvider {
     static var previews: some View {
-        BannerCard()
+        let banner0 = AssetBanner(title: "공지사항", description: "메롱", backgroundColor: .red)
+        BannerCard(banner: banner0)
     }
 }
