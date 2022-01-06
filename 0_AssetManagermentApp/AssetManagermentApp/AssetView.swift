@@ -16,6 +16,8 @@ struct AssetView: View {
                     AssetMenuGridView()
                     AssetBannerView()
                         .aspectRatio(5/2, contentMode: .fit)
+                    AssetSummaryView()
+                        .environmentObject(AssetSummaryData())
                 }
             }
             // 미리 만들어둔 네비게이션 합체
