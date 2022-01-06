@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct AssetSummaryView: View {
+    // 외부에서 AssetSummaryData 전체를 받아서 전체상태를 변경시키고 표현함
+    @EnvironmentObject var assetData : AssetSummaryData
+    var assets : [AssetData]  {
+        //readOnly
+        return assetData.assets
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing : 20) {
+            ForEach(assets) { asset in
+                AssetSectionView(assetSection: asset)
+            }
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .padding()
+        }
     }
 }
 
 struct AssetSummaryView_Previews: PreviewProvider {
     static var previews: some View {
         AssetSummaryView()
+            //AssetSummaryData 서 assets을 내뱉어줌 (published)
+            .environmentObject(AssetSummaryData())
+            .background(.gray.opacity(0.2))
     }
 }
