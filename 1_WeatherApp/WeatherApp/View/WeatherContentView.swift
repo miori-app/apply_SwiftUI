@@ -19,8 +19,8 @@ struct WeatherContentView: View {
             GeometryReader { reader in
                 ScrollView(showsIndicators: false) {
                     VStack {
-                        Color.red // 나머지 높이
-                        CurrentWeatherView() //실제 내용
+                        Color.clear // 나머지 높이
+                        CurrentWeatherView(model: .preview) //실제 내용
                     }
                     .frame(height: reader.size.height)
                     
