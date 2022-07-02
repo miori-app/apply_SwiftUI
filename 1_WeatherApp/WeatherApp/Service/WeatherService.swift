@@ -32,6 +32,16 @@ class WeatherService : NSObject, ObservableObject {
         locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
         
         super.init()
+        
         //locationManager.delegate = self
+    }
+    
+    static var preview : WeatherService {
+        let service = WeatherService(preview: true)
+        service.currentLocation = "잠실역"
+        service.currentWeather = CurrentWeather.preview
+        service.forecastList = Forecast.preview
+        
+        return service
     }
 }
