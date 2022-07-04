@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DFFADA028736976001A0ACB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD9F28736976001A0ACB /* Tests_iOS.swift */; };
+		3DFFADA228736976001A0ACB /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFADA128736976001A0ACB /* Tests_iOSLaunchTests.swift */; };
+		3DFFADAC28736976001A0ACB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFADAB28736976001A0ACB /* Tests_macOS.swift */; };
+		3DFFADAE28736976001A0ACB /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFADAD28736976001A0ACB /* Tests_macOSLaunchTests.swift */; };
+		3DFFADAF28736976001A0ACB /* WeightliftingLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD8428736974001A0ACB /* WeightliftingLog.xcdatamodeld */; };
+		3DFFADB028736976001A0ACB /* WeightliftingLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD8428736974001A0ACB /* WeightliftingLog.xcdatamodeld */; };
+		3DFFADB128736976001A0ACB /* WeightliftingLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD8628736974001A0ACB /* WeightliftingLogApp.swift */; };
+		3DFFADB228736976001A0ACB /* WeightliftingLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD8628736974001A0ACB /* WeightliftingLogApp.swift */; };
+		3DFFADB528736976001A0ACB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD8828736974001A0ACB /* Persistence.swift */; };
+		3DFFADB628736976001A0ACB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD8828736974001A0ACB /* Persistence.swift */; };
+		3DFFADB728736976001A0ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFFAD8928736976001A0ACB /* Assets.xcassets */; };
+		3DFFADB828736976001A0ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFFAD8928736976001A0ACB /* Assets.xcassets */; };
+		3DFFADC8287369AC001A0ACB /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFADC7287369AC001A0ACB /* MainListView.swift */; };
+		3DFFADC9287369AC001A0ACB /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFADC7287369AC001A0ACB /* MainListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DFFAD9C28736976001A0ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DFFAD7F28736974001A0ACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DFFAD8D28736976001A0ACB;
+			remoteInfo = "WeightliftingLog (iOS)";
+		};
+		3DFFADA828736976001A0ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DFFAD7F28736974001A0ACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DFFAD9328736976001A0ACB;
+			remoteInfo = "WeightliftingLog (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DFFAD8528736974001A0ACB /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		3DFFAD8628736974001A0ACB /* WeightliftingLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightliftingLogApp.swift; sourceTree = "<group>"; };
+		3DFFAD8828736974001A0ACB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3DFFAD8928736976001A0ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DFFAD8E28736976001A0ACB /* WeightliftingLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightliftingLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DFFAD9428736976001A0ACB /* WeightliftingLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightliftingLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DFFAD9628736976001A0ACB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3DFFAD9B28736976001A0ACB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DFFAD9F28736976001A0ACB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		3DFFADA128736976001A0ACB /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		3DFFADA728736976001A0ACB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DFFADAB28736976001A0ACB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		3DFFADAD28736976001A0ACB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		3DFFADC7287369AC001A0ACB /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DFFAD8B28736976001A0ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFAD9128736976001A0ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFAD9828736976001A0ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFADA428736976001A0ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DFFAD7E28736974001A0ACB = {
+			isa = PBXGroup;
+			children = (
+				3DFFAD8328736974001A0ACB /* Shared */,
+				3DFFAD9528736976001A0ACB /* macOS */,
+				3DFFAD9E28736976001A0ACB /* Tests iOS */,
+				3DFFADAA28736976001A0ACB /* Tests macOS */,
+				3DFFAD8F28736976001A0ACB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DFFAD8328736974001A0ACB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3DFFADCB287369EB001A0ACB /* Memory */,
+				3DFFADCA287369DF001A0ACB /* CoreData */,
+				3DFFAD8628736974001A0ACB /* WeightliftingLogApp.swift */,
+				3DFFAD8928736976001A0ACB /* Assets.xcassets */,
+				3DFFADC7287369AC001A0ACB /* MainListView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3DFFAD8F28736976001A0ACB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DFFAD8E28736976001A0ACB /* WeightliftingLog.app */,
+				3DFFAD9428736976001A0ACB /* WeightliftingLog.app */,
+				3DFFAD9B28736976001A0ACB /* Tests iOS.xctest */,
+				3DFFADA728736976001A0ACB /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DFFAD9528736976001A0ACB /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3DFFAD9628736976001A0ACB /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		3DFFAD9E28736976001A0ACB /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3DFFAD9F28736976001A0ACB /* Tests_iOS.swift */,
+				3DFFADA128736976001A0ACB /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		3DFFADAA28736976001A0ACB /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3DFFADAB28736976001A0ACB /* Tests_macOS.swift */,
+				3DFFADAD28736976001A0ACB /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		3DFFADCA287369DF001A0ACB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3DFFAD8828736974001A0ACB /* Persistence.swift */,
+				3DFFAD8428736974001A0ACB /* WeightliftingLog.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3DFFADCB287369EB001A0ACB /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DFFAD8D28736976001A0ACB /* WeightliftingLog (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DFFADBB28736976001A0ACB /* Build configuration list for PBXNativeTarget "WeightliftingLog (iOS)" */;
+			buildPhases = (
+				3DFFAD8A28736976001A0ACB /* Sources */,
+				3DFFAD8B28736976001A0ACB /* Frameworks */,
+				3DFFAD8C28736976001A0ACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeightliftingLog (iOS)";
+			productName = "WeightliftingLog (iOS)";
+			productReference = 3DFFAD8E28736976001A0ACB /* WeightliftingLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DFFAD9328736976001A0ACB /* WeightliftingLog (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DFFADBE28736976001A0ACB /* Build configuration list for PBXNativeTarget "WeightliftingLog (macOS)" */;
+			buildPhases = (
+				3DFFAD9028736976001A0ACB /* Sources */,
+				3DFFAD9128736976001A0ACB /* Frameworks */,
+				3DFFAD9228736976001A0ACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeightliftingLog (macOS)";
+			productName = "WeightliftingLog (macOS)";
+			productReference = 3DFFAD9428736976001A0ACB /* WeightliftingLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DFFAD9A28736976001A0ACB /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DFFADC128736976001A0ACB /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				3DFFAD9728736976001A0ACB /* Sources */,
+				3DFFAD9828736976001A0ACB /* Frameworks */,
+				3DFFAD9928736976001A0ACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DFFAD9D28736976001A0ACB /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 3DFFAD9B28736976001A0ACB /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3DFFADA628736976001A0ACB /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DFFADC428736976001A0ACB /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				3DFFADA328736976001A0ACB /* Sources */,
+				3DFFADA428736976001A0ACB /* Frameworks */,
+				3DFFADA528736976001A0ACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DFFADA928736976001A0ACB /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 3DFFADA728736976001A0ACB /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DFFAD7F28736974001A0ACB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3DFFAD8D28736976001A0ACB = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					3DFFAD9328736976001A0ACB = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					3DFFAD9A28736976001A0ACB = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3DFFAD8D28736976001A0ACB;
+					};
+					3DFFADA628736976001A0ACB = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3DFFAD9328736976001A0ACB;
+					};
+				};
+			};
+			buildConfigurationList = 3DFFAD8228736974001A0ACB /* Build configuration list for PBXProject "WeightliftingLog" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DFFAD7E28736974001A0ACB;
+			productRefGroup = 3DFFAD8F28736976001A0ACB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DFFAD8D28736976001A0ACB /* WeightliftingLog (iOS) */,
+				3DFFAD9328736976001A0ACB /* WeightliftingLog (macOS) */,
+				3DFFAD9A28736976001A0ACB /* Tests iOS */,
+				3DFFADA628736976001A0ACB /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DFFAD8C28736976001A0ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFFADB728736976001A0ACB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFAD9228736976001A0ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFFADB828736976001A0ACB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFAD9928736976001A0ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFADA528736976001A0ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DFFAD8A28736976001A0ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFFADB128736976001A0ACB /* WeightliftingLogApp.swift in Sources */,
+				3DFFADC8287369AC001A0ACB /* MainListView.swift in Sources */,
+				3DFFADB528736976001A0ACB /* Persistence.swift in Sources */,
+				3DFFADAF28736976001A0ACB /* WeightliftingLog.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFAD9028736976001A0ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFFADB228736976001A0ACB /* WeightliftingLogApp.swift in Sources */,
+				3DFFADC9287369AC001A0ACB /* MainListView.swift in Sources */,
+				3DFFADB628736976001A0ACB /* Persistence.swift in Sources */,
+				3DFFADB028736976001A0ACB /* WeightliftingLog.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFAD9728736976001A0ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFFADA228736976001A0ACB /* Tests_iOSLaunchTests.swift in Sources */,
+				3DFFADA028736976001A0ACB /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFFADA328736976001A0ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DFFADAE28736976001A0ACB /* Tests_macOSLaunchTests.swift in Sources */,
+				3DFFADAC28736976001A0ACB /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DFFAD9D28736976001A0ACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DFFAD8D28736976001A0ACB /* WeightliftingLog (iOS) */;
+			targetProxy = 3DFFAD9C28736976001A0ACB /* PBXContainerItemProxy */;
+		};
+		3DFFADA928736976001A0ACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DFFAD9328736976001A0ACB /* WeightliftingLog (macOS) */;
+			targetProxy = 3DFFADA828736976001A0ACB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DFFADB928736976001A0ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DFFADBA28736976001A0ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3DFFADBC28736976001A0ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.WeightliftingLog";
+				PRODUCT_NAME = WeightliftingLog;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DFFADBD28736976001A0ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.WeightliftingLog";
+				PRODUCT_NAME = WeightliftingLog;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DFFADBF28736976001A0ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.WeightliftingLog";
+				PRODUCT_NAME = WeightliftingLog;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DFFADC028736976001A0ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.WeightliftingLog";
+				PRODUCT_NAME = WeightliftingLog;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3DFFADC228736976001A0ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WeightliftingLog (iOS)";
+			};
+			name = Debug;
+		};
+		3DFFADC328736976001A0ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "WeightliftingLog (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DFFADC528736976001A0ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "WeightliftingLog (macOS)";
+			};
+			name = Debug;
+		};
+		3DFFADC628736976001A0ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GLQQLN3R4U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "WeightliftingLog (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DFFAD8228736974001A0ACB /* Build configuration list for PBXProject "WeightliftingLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DFFADB928736976001A0ACB /* Debug */,
+				3DFFADBA28736976001A0ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DFFADBB28736976001A0ACB /* Build configuration list for PBXNativeTarget "WeightliftingLog (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DFFADBC28736976001A0ACB /* Debug */,
+				3DFFADBD28736976001A0ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DFFADBE28736976001A0ACB /* Build configuration list for PBXNativeTarget "WeightliftingLog (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DFFADBF28736976001A0ACB /* Debug */,
+				3DFFADC028736976001A0ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DFFADC128736976001A0ACB /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DFFADC228736976001A0ACB /* Debug */,
+				3DFFADC328736976001A0ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DFFADC428736976001A0ACB /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DFFADC528736976001A0ACB /* Debug */,
+				3DFFADC628736976001A0ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DFFAD8428736974001A0ACB /* WeightliftingLog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DFFAD8528736974001A0ACB /* Shared.xcdatamodel */,
+			);
+			currentVersion = 3DFFAD8528736974001A0ACB /* Shared.xcdatamodel */;
+			path = WeightliftingLog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3DFFAD7F28736974001A0ACB /* Project object */;
+}
