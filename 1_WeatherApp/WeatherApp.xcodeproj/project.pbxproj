@@ -24,6 +24,7 @@
 		3DD27F282866168300A9DC4C /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD27F272866168300A9DC4C /* CurrentWeatherView.swift */; };
 		3DD27F2A286616D700A9DC4C /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD27F29286616D700A9DC4C /* ForecastView.swift */; };
 		3DD27F2C2866435700A9DC4C /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD27F2B2866435700A9DC4C /* WeatherService.swift */; };
+		3DFFAD7B28733290001A0ACB /* WeatherServie+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD7A28733290001A0ACB /* WeatherServie+Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		3DD27F272866168300A9DC4C /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		3DD27F29286616D700A9DC4C /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		3DD27F2B2866435700A9DC4C /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		3DFFAD7A28733290001A0ACB /* WeatherServie+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherServie+Location.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				3DD27F2B2866435700A9DC4C /* WeatherService.swift */,
+				3DFFAD7A28733290001A0ACB /* WeatherServie+Location.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				3DB173542863796B008FF636 /* Forecast.swift in Sources */,
 				3DD27F26286615EC00A9DC4C /* WeatherContentView.swift in Sources */,
 				3DB173522862F08D008FF636 /* Double+TemperatureString.swift in Sources */,
+				3DFFAD7B28733290001A0ACB /* WeatherServie+Location.swift in Sources */,
 				3DBA93782862332600596BAE /* MainView.swift in Sources */,
 				3DBA934E286231AC00596BAE /* Persistence.swift in Sources */,
 				3DBA9345286231AB00596BAE /* WeatherAppApp.swift in Sources */,
