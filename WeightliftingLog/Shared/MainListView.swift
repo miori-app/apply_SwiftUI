@@ -13,15 +13,7 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.list) { trLog in
-                VStack(alignment: .leading) {
-                    Text(trLog.trainingLog)
-                        .font(.body)
-                        .lineLimit(1)
-                    
-                    Text(trLog.insertDate, style: .date)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
+                TrainCell(trLog: trLog)
             }
             .listStyle(.plain)
             .navigationTitle("역도기록")
