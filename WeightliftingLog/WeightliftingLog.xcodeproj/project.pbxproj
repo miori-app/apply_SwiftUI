@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DD24F17287729ED0024F050 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD24F16287729ED0024F050 /* TrainCell.swift */; };
+		3DD24F18287729ED0024F050 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD24F16287729ED0024F050 /* TrainCell.swift */; };
+		3DD24F19287729ED0024F050 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD24F16287729ED0024F050 /* TrainCell.swift */; };
+		3DD24F1A287729ED0024F050 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD24F16287729ED0024F050 /* TrainCell.swift */; };
 		3DFFADA028736976001A0ACB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFAD9F28736976001A0ACB /* Tests_iOS.swift */; };
 		3DFFADA228736976001A0ACB /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFADA128736976001A0ACB /* Tests_iOSLaunchTests.swift */; };
 		3DFFADAC28736976001A0ACB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFADAB28736976001A0ACB /* Tests_macOS.swift */; };
@@ -45,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DD24F16287729ED0024F050 /* TrainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCell.swift; sourceTree = "<group>"; };
 		3DFFAD8528736974001A0ACB /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		3DFFAD8628736974001A0ACB /* WeightliftingLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightliftingLogApp.swift; sourceTree = "<group>"; };
 		3DFFAD8828736974001A0ACB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -95,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DD24F15287729C60024F050 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DD24F16287729ED0024F050 /* TrainCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3DFFAD7E28736974001A0ACB = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,7 @@
 		3DFFAD8328736974001A0ACB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3DD24F15287729C60024F050 /* View */,
 				3DFFADCB287369EB001A0ACB /* Memory */,
 				3DFFADCA287369DF001A0ACB /* CoreData */,
 				3DFFAD8628736974001A0ACB /* WeightliftingLogApp.swift */,
@@ -336,6 +350,7 @@
 				3DFFADB528736976001A0ACB /* Persistence.swift in Sources */,
 				3DFFADCD28736D48001A0ACB /* TrainingLog.swift in Sources */,
 				3DFFADD028736DF9001A0ACB /* TrainingLogStore.swift in Sources */,
+				3DD24F17287729ED0024F050 /* TrainCell.swift in Sources */,
 				3DFFADAF28736976001A0ACB /* WeightliftingLog.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +364,7 @@
 				3DFFADB628736976001A0ACB /* Persistence.swift in Sources */,
 				3DFFADCE28736D48001A0ACB /* TrainingLog.swift in Sources */,
 				3DFFADD128736DF9001A0ACB /* TrainingLogStore.swift in Sources */,
+				3DD24F18287729ED0024F050 /* TrainCell.swift in Sources */,
 				3DFFADB028736976001A0ACB /* WeightliftingLog.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +375,7 @@
 			files = (
 				3DFFADA228736976001A0ACB /* Tests_iOSLaunchTests.swift in Sources */,
 				3DFFADA028736976001A0ACB /* Tests_iOS.swift in Sources */,
+				3DD24F19287729ED0024F050 /* TrainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +385,7 @@
 			files = (
 				3DFFADAE28736976001A0ACB /* Tests_macOSLaunchTests.swift in Sources */,
 				3DFFADAC28736976001A0ACB /* Tests_macOS.swift in Sources */,
+				3DD24F1A287729ED0024F050 /* TrainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
