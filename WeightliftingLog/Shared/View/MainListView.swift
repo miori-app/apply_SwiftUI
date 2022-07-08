@@ -13,7 +13,11 @@ struct MainListView: View {
     var body: some View {
         NavigationView {
             List(store.list) { trLog in
-                TrainCell(trLog: trLog)
+                NavigationLink {
+                    DetailView(trLog: trLog)
+                } label: {
+                    TrainCell(trLog: trLog)
+                }
             }
             .listStyle(.plain)
             .navigationTitle("역도기록")
