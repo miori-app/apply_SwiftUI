@@ -13,6 +13,10 @@
 		3D12715E28773ED80047A430 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12715C28773ED80047A430 /* ComposeView.swift */; };
 		3D12715F28773ED80047A430 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12715C28773ED80047A430 /* ComposeView.swift */; };
 		3D12716028773ED80047A430 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12715C28773ED80047A430 /* ComposeView.swift */; };
+		3D1271622877692F0047A430 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1271612877692F0047A430 /* DetailView.swift */; };
+		3D1271632877692F0047A430 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1271612877692F0047A430 /* DetailView.swift */; };
+		3D1271642877692F0047A430 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1271612877692F0047A430 /* DetailView.swift */; };
+		3D1271652877692F0047A430 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1271612877692F0047A430 /* DetailView.swift */; };
 		3DD24F17287729ED0024F050 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD24F16287729ED0024F050 /* TrainCell.swift */; };
 		3DD24F18287729ED0024F050 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD24F16287729ED0024F050 /* TrainCell.swift */; };
 		3DD24F19287729ED0024F050 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD24F16287729ED0024F050 /* TrainCell.swift */; };
@@ -56,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		3D12715C28773ED80047A430 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		3D1271612877692F0047A430 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3DD24F16287729ED0024F050 /* TrainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCell.swift; sourceTree = "<group>"; };
 		3DFFAD8528736974001A0ACB /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		3DFFAD8628736974001A0ACB /* WeightliftingLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightliftingLogApp.swift; sourceTree = "<group>"; };
@@ -113,6 +118,7 @@
 				3DFFADC7287369AC001A0ACB /* MainListView.swift */,
 				3DD24F16287729ED0024F050 /* TrainCell.swift */,
 				3D12715C28773ED80047A430 /* ComposeView.swift */,
+				3D1271612877692F0047A430 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DFFADB128736976001A0ACB /* WeightliftingLogApp.swift in Sources */,
+				3D1271622877692F0047A430 /* DetailView.swift in Sources */,
 				3DFFADC8287369AC001A0ACB /* MainListView.swift in Sources */,
 				3DFFADB528736976001A0ACB /* Persistence.swift in Sources */,
 				3DFFADCD28736D48001A0ACB /* TrainingLog.swift in Sources */,
@@ -369,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DFFADB228736976001A0ACB /* WeightliftingLogApp.swift in Sources */,
+				3D1271632877692F0047A430 /* DetailView.swift in Sources */,
 				3DFFADC9287369AC001A0ACB /* MainListView.swift in Sources */,
 				3DFFADB628736976001A0ACB /* Persistence.swift in Sources */,
 				3DFFADCE28736D48001A0ACB /* TrainingLog.swift in Sources */,
@@ -384,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D12715F28773ED80047A430 /* ComposeView.swift in Sources */,
+				3D1271642877692F0047A430 /* DetailView.swift in Sources */,
 				3DFFADA228736976001A0ACB /* Tests_iOSLaunchTests.swift in Sources */,
 				3D12715B28773ECC0047A430 /* MainListView.swift in Sources */,
 				3DFFADA028736976001A0ACB /* Tests_iOS.swift in Sources */,
@@ -396,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D12716028773ED80047A430 /* ComposeView.swift in Sources */,
+				3D1271652877692F0047A430 /* DetailView.swift in Sources */,
 				3DFFADAE28736976001A0ACB /* Tests_macOSLaunchTests.swift in Sources */,
 				3D12715A28773ECC0047A430 /* MainListView.swift in Sources */,
 				3DFFADAC28736976001A0ACB /* Tests_macOS.swift in Sources */,
