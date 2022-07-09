@@ -10,6 +10,7 @@ import SwiftUI
 struct ComposeView: View {
     @EnvironmentObject var store: TrainingLogStore
     @Environment(\.dismiss) var dismiss
+    var trLog: TrainingLog? = nil
     //입력한 텍스트 바인딩
     //state variable
     @State private var content : String = ""
@@ -19,8 +20,15 @@ struct ComposeView: View {
                 //투웨이 바인딩
                 TextEditor(text: $content)
                     .padding()
+                    .onAppear {
+                        //이전내용 표시위함
+                        //화면이 표시되는 시점에 초기화 코드
+                        if let trLog = trLog {
+                            content = trLog.trainingLog
+                        }
+                    }
             }
-            .navigationTitle("새 일지")
+            .navigationTitle(trLog != nil ? "기록 편집" : "새 일지")
             .navigationBarTitleDisplayMode(.inline) //large Title 안써
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
@@ -32,8 +40,12 @@ struct ComposeView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
-                        //저장
-                        store.insert(log: content)
+                        if let trLog = trLog {
+                            store.update(log: trLog, content: content)
+                        } else {
+                            //저장
+                            store.insert(log: content)
+                        }
                         dismiss()
                     } label: {
                         Text("저장")
