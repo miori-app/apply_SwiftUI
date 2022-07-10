@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct TrainCell: View {
-    @ObservedObject var trLog : TrainingLog
+    @ObservedObject var trLog : WeightliftingLogEntity
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(trLog.trainingLog)
+            Text(trLog.trainingLog ?? "")
                 .font(.body)
                 .lineLimit(1)
             
-            Text(trLog.insertDate, style: .date)
+            Text(trLog.insertDate ?? .now, style: .date)
                 .font(.caption)
                 .foregroundColor(.secondary)
         }
@@ -25,6 +25,6 @@ struct TrainCell: View {
 
 struct TrainCell_Previews: PreviewProvider {
     static var previews: some View {
-        TrainCell(trLog: TrainingLog(trainingLog: "DummyData"))
+        TrainCell(trLog: WeightliftingLogEntity(context: CoreDataManager.shared.mainContext))
     }
 }
