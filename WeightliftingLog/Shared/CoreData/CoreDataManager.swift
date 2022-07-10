@@ -1,34 +1,23 @@
 //
-//  Persistence.swift
-//  Shared
+//  CoreDataManager.swift
+//  WeightliftingLog
 //
-//  Created by miori Lee on 2022/07/05.
+//  Created by miori Lee on 2022/07/10.
 //
 
+import Foundation
 import CoreData
+import SwiftUI
 
-struct PersistenceController {
-    static let shared = PersistenceController()
-
-    static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true)
-        let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
-        do {
-            try viewContext.save()
-        } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-        }
-        return result
-    }()
-
+class CoreDataManager: ObservableObject {
+    //싱글톤
+    static let shared = CoreDataManager()
+    
     let container: NSPersistentContainer
+    
+    var mainContext: NSManagedObjectContext {
+        return container.viewContext
+    }
 
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "WeightliftingLog")
@@ -52,5 +41,39 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+    }
+    func saveContext() {
+        if mainContext.hasChanges {
+            do {
+                try mainContext.save()
+            } catch {
+                print(error)
+            }
+        }
+    }
+    //CRUD
+    func addTrLog(trLog: String) {
+        let newTrLog = WeightliftingLogEntity(context: mainContext)
+        newTrLog.trainingLog = trLog
+        newTrLog.insertDate = Date.now
+        
+        saveContext()
+    }
+    
+    //데이터 읽어오기
+    @FetchRequest(sortDescriptors: [SortDescriptor(\WeightliftingLogEntity.insertDate, order: .reverse)])
+    var trLogList: FetchedResults<WeightliftingLogEntity>
+    
+    //업데이트
+    func update(trLog: WeightliftingLogEntity?, newTrLog: String) {
+        trLog?.trainingLog = newTrLog
+        saveContext()
+    }
+    
+    func delete(trLog: WeightliftingLogEntity?) {
+        if let trLog = trLog {
+            mainContext.delete(trLog)
+            saveContext()
+        }
     }
 }
