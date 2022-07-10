@@ -12,12 +12,15 @@ struct MainListView: View {
     @State private var showCompseView: Bool = false
     var body: some View {
         NavigationView {
-            List(store.list) { trLog in
-                NavigationLink {
-                    DetailView(trLog: trLog)
-                } label: {
-                    TrainCell(trLog: trLog)
+            List {
+                ForEach(store.list) { trLog in
+                    NavigationLink {
+                        DetailView(trLog: trLog)
+                    } label: {
+                        TrainCell(trLog: trLog)
+                    }
                 }
+                .onDelete(perform: store.delete)
             }
             .listStyle(.plain)
             .navigationTitle("역도기록")
@@ -30,7 +33,7 @@ struct MainListView: View {
             }
             .sheet(isPresented: $showCompseView) {
                 ComposeView()
-            }
+        }
         }
     }
 }
