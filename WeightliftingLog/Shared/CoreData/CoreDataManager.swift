@@ -60,10 +60,6 @@ class CoreDataManager: ObservableObject {
         saveContext()
     }
     
-    //데이터 읽어오기
-    @FetchRequest(sortDescriptors: [SortDescriptor(\WeightliftingLogEntity.insertDate, order: .reverse)])
-    var trLogList: FetchedResults<WeightliftingLogEntity>
-    
     //업데이트
     func update(trLog: WeightliftingLogEntity?, newTrLog: String) {
         trLog?.trainingLog = newTrLog
