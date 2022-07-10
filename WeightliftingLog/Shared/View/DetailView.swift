@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct DetailView: View {
-    @ObservedObject var trLog: TrainingLog
-    @EnvironmentObject var store: TrainingLogStore
+    @ObservedObject var trLog: WeightliftingLogEntity
+    @EnvironmentObject var manager: CoreDataManager
     @State var showComposeView: Bool = false
     @State private var showDeleteAlert: Bool = false
     @Environment(\.dismiss) var dismiss
@@ -18,11 +18,11 @@ struct DetailView: View {
             ScrollView {
                 VStack {
                     HStack {
-                        Text(trLog.trainingLog)
+                        Text(trLog.trainingLog ?? "")
                             .padding()
                         Spacer(minLength: 0)
                     }
-                    Text(trLog.insertDate, style: .date)
+                    Text(trLog.insertDate ?? .now, style: .date)
                         .padding()
                         .font(.footnote)
                         .foregroundColor(.secondary)
@@ -41,7 +41,7 @@ struct DetailView: View {
                 .foregroundColor(.red)
                 .alert("삭제 확인", isPresented: $showDeleteAlert) {
                     Button(role: .destructive) {
-                        store.delete(log: trLog)
+                        manager.delete(trLog: trLog)
                         dismiss()
                     } label: {
                         Text("삭제")
@@ -67,8 +67,8 @@ struct DetailView: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            DetailView(trLog: TrainingLog(trainingLog: "Dummy"))
-                .environmentObject(TrainingLogStore())
+            DetailView(trLog: WeightliftingLogEntity(context: CoreDataManager.shared.mainContext))
+                .environmentObject(CoreDataManager.shared)
         }
     }
 }
