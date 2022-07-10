@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ComposeView: View {
-    @EnvironmentObject var store: TrainingLogStore
+    //@EnvironmentObject var store: TrainingLogStore
+    @EnvironmentObject var manager: CoreDataManager
     @Environment(\.dismiss) var dismiss
-    var trLog: TrainingLog? = nil
+    //var trLog: TrainingLog? = nil
+    var trLog: WeightliftingLogEntity? = nil
     //입력한 텍스트 바인딩
     //state variable
     @State private var content : String = ""
@@ -23,8 +25,8 @@ struct ComposeView: View {
                     .onAppear {
                         //이전내용 표시위함
                         //화면이 표시되는 시점에 초기화 코드
-                        if let trLog = trLog {
-                            content = trLog.trainingLog
+                        if let trLog = trLog?.trainingLog {
+                            content = trLog
                         }
                     }
             }
@@ -41,10 +43,10 @@ struct ComposeView: View {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
                         if let trLog = trLog {
-                            store.update(log: trLog, content: content)
+                            manager.update(trLog: trLog, newTrLog: content)
                         } else {
                             //저장
-                            store.insert(log: content)
+                            manager.addTrLog(trLog: content)
                         }
                         dismiss()
                     } label: {
@@ -60,6 +62,6 @@ struct ComposeView: View {
 struct ComposeView_Previews: PreviewProvider {
     static var previews: some View {
         ComposeView()
-            .environmentObject(TrainingLogStore())
+            .environmentObject(CoreDataManager.shared)
     }
 }
