@@ -17,6 +17,8 @@ struct MainListView: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\WeightliftingLogEntity.insertDate, order: .reverse)])
     var trLogList: FetchedResults<WeightliftingLogEntity>
     
+    @State private var keyword: String = ""
+    
     var body: some View {
         NavigationView {
             List {
@@ -40,6 +42,15 @@ struct MainListView: View {
             }
             .sheet(isPresented: $showCompseView) {
                 ComposeView()
+            }
+            .searchable(text: $keyword, prompt: "일지 검색")
+            .onChange(of: keyword) { newValue in
+                //검색코드 구현
+                if keyword.isEmpty {
+                    trLogList.nsPredicate = nil
+                } else {
+                    trLogList.nsPredicate = NSPredicate(format: "trainingLog CONTAINS[c] %@", newValue)
+                }
             }
         }
     }
