@@ -18,6 +18,7 @@ struct MainListView: View {
     var trLogList: FetchedResults<WeightliftingLogEntity>
     
     @State private var keyword: String = ""
+    @State private var sortByDateDesc: Bool = true
     
     var body: some View {
         NavigationView {
@@ -34,10 +35,18 @@ struct MainListView: View {
             .listStyle(.plain)
             .navigationTitle("역도기록")
             .toolbar {
-                Button {
-                    showCompseView = true
-                } label: {
-                    Image(systemName: "plus")
+                HStack {
+                    Button {
+                        showCompseView = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    Button {
+                        sortByDateDesc.toggle()
+                    } label: {
+                        Image(systemName: "arrow.up.arrow.down")
+                    }
+
                 }
             }
             .sheet(isPresented: $showCompseView) {
@@ -50,6 +59,17 @@ struct MainListView: View {
                     trLogList.nsPredicate = nil
                 } else {
                     trLogList.nsPredicate = NSPredicate(format: "trainingLog CONTAINS[c] %@", newValue)
+                }
+            }
+            .onChange(of: sortByDateDesc) { desc in
+                if desc {
+                    trLogList.sortDescriptors = [
+                        SortDescriptor(\.insertDate, order: .reverse)
+                    ]
+                } else {
+                    trLogList.sortDescriptors = [
+                        SortDescriptor(\.insertDate, order: .forward)
+                    ]
                 }
             }
         }
